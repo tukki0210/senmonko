@@ -1,0 +1,113 @@
+.hero-image {
+    text-align: center;
+}
+
+
+
+/* course */
+.container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 2px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #f5f5f5;
+    border-radius: 2px;
+    max-width: 400px;
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+    overflow: hidden;
+    position: relative;
+}
+.card .card-image {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+}
+
+.card img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    transform: scale(1);
+    transition: 0.4s;
+}
+
+.card:hover img {
+    margin: 0;
+    padding: 0;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.25em !important;
+    color: #007354 !important;
+}
+
+.card-content p {
+    margin:5px 0 40px 0;
+}
+
+.card .detail {
+    margin-top: 20px;
+    padding: 0 20px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card:hover .detail {
+    color: #007354;
+    font-weight: 600;
+}
+
+.card .detail p::after {
+    content: "→";
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 100px;
+    color: #000;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+.card:hover .detail p::after {
+    color: #fff;
+    background-color: #007354;
+    border-color: #007354;
+    transition: 0.4s;
+}
+@media screen and (max-width: 480px) {
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .container {
+        max-width: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 2px;
+        margin: 0 auto;
+    }
+}

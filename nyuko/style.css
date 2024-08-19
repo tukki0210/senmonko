@@ -1,0 +1,73 @@
+
+p.note {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    /* font-weight: bold; */
+}
+
+/* ul li a:hover {
+    text-decoration: underline;
+} */
+
+
+ul li ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+/* テーブル全体のスタイル */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* テーブルヘッダーのスタイル */
+th, td {
+    padding: 12px 15px;
+}
+
+/* テーブルヘッダーの背景色とフォント色 */
+th {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* 偶数行の背景色 */
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* 奇数行の背景色 */
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* テーブルの枠線 */
+th, td {
+    border: 1px solid #dddddd;
+}
+
+/* テーブルのホバー効果 */
+/* tr:hover {
+    background-color: #f1f1f1;
+} */

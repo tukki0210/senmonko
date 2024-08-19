@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年間スケジュール</title>
+    <style>
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media (max-width: 800px) {
+    th, td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tr {
+        margin-bottom: 1rem;
+    }
+    
+    td {
+        padding: 8px;
+        text-align: right;
+        position: relative;
+    }
+    
+    td[data-label]:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>年間スケジュール</h1>
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>期間</th>
+                    <th>4月</th>
+                    <th>5月</th>
+                    <th>6月</th>
+                    <th>7月</th>
+                    <th>8月</th>
+                    <th>9月</th>
+                    <th>10月</th>
+                    <th>11月</th>
+                    <th>12月</th>
+                    <th>1月</th>
+                    <th>2月</th>
+                    <th>3月</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>入学式<br>新入生歓迎</td>
+                    <td>ゴールデンウィーク<br>休校</td>
+                    <td>中間試験<br>試験期間</td>
+                    <td colspan="9"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td colspan="3"></td>
+                    <td>期末試験<br>試験期間</td>
+                    <td>夏休み<br>休校</td>
+                    <td>文化祭<br>学校行事</td>
+                    <td>スポーツ大会<br>体育祭</td>
+                    <td colspan="5"></td>
+                </tr>
+                <!-- 他のグループや月のイベントも追加 -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

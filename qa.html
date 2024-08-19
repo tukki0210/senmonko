@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .qa-section {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .qa-section h2 {
+            margin: 0;
+        }
+
+        .qa-6 {
+            max-width: 650px;
+            margin-bottom: 5px;
+            border-bottom: 2px solid #007354;
+        }
+
+        .qa-6 summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            padding: 1em 2em 1em 3em;
+            color: #333333;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .qa-6 summary::before,
+        .qa-6 p::before {
+            position: absolute;
+            left: 1em;
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+
+        .qa-6 summary::before {
+            color: #1d60a3;
+            content: "Q";
+        }
+
+        .qa-6 summary::after {
+            transform: translateY(-25%) rotate(45deg);
+            width: 7px;
+            height: 7px;
+            margin-left: 10px;
+            border-bottom: 3px solid #333333b3;
+            border-right: 3px solid #333333b3;
+            content: '';
+            transition: transform .5s;
+        }
+
+        .qa-6[open] summary::after {
+            transform: rotate(225deg);
+        }
+
+        .qa-6 p {
+            position: relative;
+            transform: translateY(-10px);
+            opacity: 0;
+            margin: 0;
+            padding: .3em 3em 1.5em;
+            color: #333;
+            transition: transform .5s, opacity .5s;
+        }
+
+        .qa-6[open] p {
+            transform: none;
+            opacity: 1;
+        }
+
+        .qa-6 p:first-of-type::before {
+            color: #c22e2e;
+            line-height: 1.2;
+            content: "A";
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="qa-section">
+        <h2>Q&A　奈良県立高等技術専門校について</h3>
+            <details class="qa-6">
+                <summary>民間教育機関（専門学校など）との違いは何ですか？</summary>
+                <p>
+                    専門学校は学校教育法に基づく施設です。<br>
+                    本校は、学校を卒業し新たに職業に就かれる方や、再就職を希望する方が、職業に必要な技能・知識を学ぶ、職業能力開発促進法に基づく公共職業能力開発施設です。</p>
+            </details>
+            <details class="qa-6">
+                <summary>場所はどこですか。アクセスは？</summary>
+                <p>近鉄橿原線石見駅のすぐそばにあります。
+
+                    奈良県高等技術専門校
+                    　〒636-0212 　奈良県磯城郡三宅町石見440
+                    　TEL ： 0745-44-0565
+                    　FAX ： 0745-44-1057　
+
+                    ・最寄り駅：
+                    　近鉄橿原線石見駅下車　西へ徒歩約2分（西へ約200m）
+                    　または近鉄田原本線黒田駅下車　北東へ徒歩約12分(北東へ約1km)
+
+                    詳細は本ホームページの交通案内をご覧ください。</p>
+            </details>
+            <details class="qa-6">
+                <summary>どのような訓練科がありますか？</summary>
+                <p>詳しくは本ホームページの<a href="/dd.aspx?menuid=2819">訓練科紹介</a>をご覧下さい。</p>
+            </details>
+    </section>
+    <section class="qa-section">
+        <h2>Q&A　応募・入校試験関係</h2>
+        <details class="qa-6">
+            <summary>見学、入校の相談をしたいのですが？</summary>
+            <p>
+                本校では施設見学会を開催しております。入校を検討・希望されている方は、ぜひご参加ください。日程については、本ホームページの<a
+                    href="/dd.aspx?itemid=75515#8">職業訓練生募集案内</a>でご確認ください。<br>
+                また、販売実務科（知的障害のある方を対象とした科）では、施設見学会を随時開催しております。本ホームページの<a
+                    href="/dd.aspx?itemid=75659#6">販売実務科応募要領</a>でご確認の上、 事前に本校に電話などでご連絡ください。
+            </p>
+        </details>
+        <details class="qa-6">
+            <summary>職業訓練生募集案内や入校願書はどこで入手できますか？</summary>
+            <p> 次のいくつかの方法で入手可能です</p>
+            <ul>
+                <li><a href="https://jsite.mhlw.go.jp/nara-roudoukyoku/hw/03hellowork.html" target="_blank"
+                        class="other_link">奈良県内の最寄りの公共職業安定所（ハローワーク）<img class="or_icon" src="/Images/link_icon.gif"
+                            alt="外部サイトへのリンク"></a>や本校で入手できます。 </li>
+                <li>本校ホームページからPDFファイルとしてダウンロードすることが可能です。<br>
+                    　　・<a href="/dd.aspx?itemid=75515#1">職業訓練生募集案内</a><br>
+                    　　・<a href="/dd.aspx?itemid=75659#1">販売実務科応募要領(知的障害のある方を対象とした科)</a> </li>
+                <li>140円切手を貼った返信用封筒を同封し、<a
+                        href="/dd.aspx?itemid=22197">資料請求用紙</a>とともに本校に郵送していただければ、折り返し職業訓練生募集案内、願書等を郵送します。 </li>
+            </ul>
+            <p>[注意]本校に入校を希望される方のうち、一般求職者（今春、中学校、高等学校を卒業予定以外のすべての方）は、事前に居住地を管轄するハローワーク（公共職業安定所）で職業相談を受けてから、応募についてその指示に従っていただく必要があります。今春、中学校、高等学校等を卒業予定の方は、在学校で進路指導を受けてその指示に従って応募して下さい。
+            </p>
+        </details>
+        <details class="qa-6">
+            <summary>現在就業中ですが入校することは可能ですか？</summary>
+            <p>入校時点で退職していれば可能です。居住地を管轄するハローワーク（公共職業安定所）でご確認ください。</p>
+        </details>
+        <details class="qa-6">
+            <summary>どうすれば入校できますか？願書はどこへ提出すればよいのでしょうか？</summary>
+            <p>本校の職業訓練生募集案内パンフレットや、本ホームページの、<a href="/dd.aspx?itemid=75515">職業訓練生募集案内</a>や、販売実務科は<a
+                    href="/dd.aspx?itemid=75659">販売実務科(知的障害者のある方を対象とした科)応募要領</a> でご確認ください。</p>
+        </details>
+        <details class="qa-6">
+            <summary>来年で定年退職をする予定ですが、60歳を過ぎても入校できますか？</summary>
+            <p>可能ですが概ね65歳以下の方を対象としております。本校に入校せず再就職することも可能だと思いますので、居住地を管轄するハローワーク（公共職業安定所）でご相談ください。</p>
+        </details>
+        <details class="qa-6">
+            <summary>アルバイトやフリーターをしていますが入校できますか？</summary>
+            <p>可能です。ただし、入校後は職業訓練に差し支えないようにしていただく必要があります。</p>
+        </details>
+        <details class="qa-6">
+            <summary>併願は可能ですか？</summary>
+            <p>・<span style="text-decoration: underline;">
+                    新規学卒者</span>（今年度末に中学校、高等学校、または特別支援学校卒業予定で、就職を希望される方）で、来年度4月入校の訓練科に応募される方は、<span
+                    style="text-decoration: underline;">
+                    併願が可能</span>です。この場合、本校に入校せず他の併願先に行くことを決めた場合、すみやかに本校に辞退の連絡をしてください（欠員充足の再募集等を行うため）。</p>
+            <p>・<span style="text-decoration: underline;"> 一般求職者</span>（上記「新規学卒者」以外の、就職を希望される全ての方）の<span
+                    style="text-decoration: underline;"> 併願はできません</span>。<br>
+                （先にハローワーク（公共職業安定所）で就職相談を受けてからの、雇用保険制度等に関係する受講指示や受講推薦等による応募となるため。）</p>
+            </p>
+        </details>
+        <details class="qa-6">
+            <summary>県外からの応募は可能ですか？</summary>
+            <p>
+                　県外からの応募も可能です。居住地を管轄するハローワーク（公共職業安定所）でご相談ください。<br>
+                なお、新規に中学校、高等学校等卒業予定の方は、在学校で進路指導を受けた後、直接当校に応募可能です。<br>
+                応募方法について詳しくは、本ホームページの<a href="/dd.aspx?itemid=75515#9">職業訓練生募集案内</a>や、販売実務科は<a
+                    href="/dd.aspx?itemid=75659#4">販売実務科（知的障害のある方を対象とした科）応募要領</a>でご確認ください。
+            </p>
+        </details>
+        <details class="qa-6">
+            <summary>募集定員は何名ですか？</summary>
+            <p>すべての訓練科の定員は同一でそれぞれ20名となっています。</p>
+        </details>
+        <details class="qa-6">
+            <summary>今春中学校を卒業する予定ですが、応募書類は何を添付すれば良いですか</summary>
+            <p>建築科、住宅設備科、服飾ビジネス科、オフィスビジネス科、造園技術科を応募予定の方は、本校所定の「入校願書」と「志望動機等記入票」とともに、応募書類として「新規中学校卒業者応募書類（職業相談票[乙]）」を添付して、本校に持参で提出願います。<br>
+                　販売実務科（知的障のある方を対象とした科）を応募予定の方は、本校所定の「入校願書」とともに、療育手帳（もしくは障害者職業センター所長が発行する判定書）の写しを添付して、学校所在地を管轄するハローワークに提出して下さい。<br>
+                　詳しくは、本ホームページの<a href="/dd.aspx?itemid=75515#9">職業訓練生募集案内</a>や、販売実務科は<a
+                    href="/dd.aspx?itemid=75659#4">販売実務科（知的障害のある方を対象とした科）応募要領</a>でご確認ください。
+            </p>
+        </details>
+        <details class="qa-6">
+            <summary>入校選考はどのような内容ですか？</summary>
+            <p>すべての訓練科の定員は同一でそれぞれ20名となっています。</p>
+        </details>
+        <details class="qa-6">
+            <summary>募集定員は何名ですか？</summary>
+            <p>　本校ホームページの<a href="/dd.aspx?itemid=75515#10">職業訓練生募集案内</a>や、<a
+                    href="/dd.aspx?itemid=75659#7">販売実務科(知的障害のある方を対象とした科)応募要領</a>でご確認ください。 </p>
+        </details>
+        <details class="qa-6">
+            <summary>入校選考はどのような内容ですか？</summary>
+            <p>すべての訓練科の定員は同一でそれぞれ20名となっています。</p>
+        </details>
+        <details class="qa-6">
+            <summary>入校選考はどのような内容ですか？</summary>
+            <p>すべての訓練科の定員は同一でそれぞれ20名となっています。</p>
+        </details>
+        <details class="qa-6">
+            <summary>試験倍率はどの程度ですか？</summary>
+            <p>詳しくは本ホームページの<a href="/dd.aspx?itemid=22224">入校状況</a>をご覧ください。</p>
+        </details>
+        <details class="qa-6">
+            <summary>合格後の手続きはどうすればいいのでしょうか？</summary>
+            <p>入校手続きをしていただきます。詳細は合格通知書に記載してお伝えします。</p>
+        </details>
+    </section>
+    <section class="qa-section">
+        <h2>カリキュラム・費用・生活・就職等</h3>
+            <details class="qa-6">
+                <summary>就職活動のサポートや相談体制について教えてください。</summary>
+                <p>本校はハローワーク（公共職業安定所）と密接に連携しています。さらに、当校職員が企業見学の他独自の情報収集を行い、訓練生の皆さんの希望・技能・適性等から求人求職のマッチングを行うなど、職業訓練期間を通して就職活動のお手伝いをします。休憩時間中に気軽に、就職支援室で情報収集や相談などもできます。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>受験料、入学金、授業料等はいくらですか？</summary>
+                <p>受験料、入学金、授業料は「無料」です。ただし職業訓練に必要な実費（教科書他）を負担していただきます。<br>
+                    詳しくは、本校ホームページの<a href="/dd.aspx?itemid=75515#6">職業訓練生募集案内</a>でご確認ください。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>給付制度はありますか？</summary>
+                <p>受験料、入学金、授業料は「無料」です。ただし職業訓練に必要な実費（教科書他）を負担していただきます。<br>
+                    詳しくは、本校ホームページの<a href="/dd.aspx?itemid=75515#6">職業訓練生募集案内</a>でご確認ください。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>受験料、入学金、授業料等はいくらですか？</summary>
+                <p>
+                    本校ホームページの<a href="/dd.aspx?itemid=75515#5">職業訓練生募集案内</a>でご確認ください。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>訓練期間中の雇用保険の給付について教えてください。</summary>
+                <p><a href="https://jsite.mhlw.go.jp/nara-roudoukyoku/hw_00007.html" target="_blank"
+                        class="other_link">居住地を管轄するハローワーク（公共職業安定所）<img class="or_icon" src="/Images/link_icon.gif"
+                            alt="外部サイトへのリンク"></a>でご確認ください。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>開始・終了時刻を教えて下さい。</summary>
+                <p>詳細はホームページの<a href="/dd.aspx?menuid=12239#itemid70115">訓練時間</a>をご覧ください。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>休校日はいつですか？</summary>
+                <p>土曜日、日曜日、祝祭日、夏季休校日（7月下旬～8月中旬）、冬季休校日（12月下旬～翌年1月上旬）、創立記念日（12月1日）です。また、警報発令時等、臨時休校になる場合があります。</p>
+            </details>
+            <details class="qa-6">
+                <summary>受講期間について教えて下さい。</summary>
+                <p>訓練科はすべて受講期間が1年となっています（4月～翌年3月）。</p>
+            </details>
+            <details class="qa-6">
+                <summary>自動車やバイクで通校はできますか？</summary>
+                <p>当校の所在地は近鉄橿原線石見駅前ですので、原則、公共交通機関による通校となります。
+                    ただし、公共交通機関による通校に著しく支障がある場合、事前に相談ください。バイクでの通校を許可制で認める場合があります。自動車による通校は当校敷地に駐車スペースの余裕がありませんので、石見駅近隣の有料駐車場に駐車していただくことになります。
+                </p>
+            </details>
+            <details class="qa-6">
+                <summary>食堂はありますか？</summary>
+                <p>食堂はありません。昼食は弁当を持参していただくか、本校でとりまとめる給食業者の弁当を注文していただくことになります。また、昼休み、本校にパンの移動販売が来ますのでパンを購入することができます。</p>
+            </details>
+            <details class="qa-6">
+                <summary>就職率について教えて下さい。</summary>
+                <p>
+                    本ホームページの<a href="/dd.aspx?itemid=22225">就職状況</a>をご覧ください。
+                </p>
+            </details>
+    </section>
+</body>
+
+</html>

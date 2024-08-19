@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-image:  linear-gradient(90deg,#4db1ec,#a2e29b);
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            gap: 2px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #f5f5f5;
+            border-radius: 2px;
+            max-width: 400px;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+            overflow: hidden;
+            position: relative;
+        }
+        .card .card-image {
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1em;
+        }
+
+        .card img {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+            transform: scale(1);
+            transition: 0.4s;
+        }
+
+        .card:hover img {
+            margin: 0;
+            padding: 0;
+            transform: scale(1.1);
+            transition: 0.4s;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.25em !important;
+            color: #007354 !important;
+        }
+
+        .card-content p {
+            margin:5px 0 40px 0;
+        }
+
+        .card .detail {
+            margin-top: 20px;
+            padding: 0 20px 0 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .card:hover .detail {
+            color: #007354;
+            font-weight: 600;
+        }
+
+        .card .detail p::after {
+            content: "→";
+            margin-left: 10px;
+            font-size: 10px;
+            line-height: 1.4;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 100px;
+            color: #000;
+            background-color: #fff;
+            transition: 0.4s;
+        }
+
+        .card:hover .detail p::after {
+            color: #fff;
+            background-color: #007354;
+            border-color: #007354;
+            transition: 0.4s;
+        }
+        @media screen and (max-width: 480px) {
+            /* 480px以下に適用されるCSS（スマホ用） */
+            .container {
+                max-width: 500px;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                gap: 2px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <h2>各科の紹介</h2>
+        <div class="container">
+            <div class="card">
+                <a href="/item/75830.htm#itemid75830">
+                    <div class="card-image">
+                        <img src="images/R06IT001.jpg" alt="ITシステム科">
+                    </div>
+                    <div class="card-content">
+                        <h3>ITシステム科</h3>
+                        <p>プログラミング、データベース、Web開発などの実習と、関連試験対策の授業を行い、IT業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75828.htm#itemid75828">
+                    <div class="card-image">
+                        <img src="images/r04kagu01.jpg" alt="家具工芸科">
+                    </div>
+                    <div class="card-content">
+                        <h3>家具工芸科</h3>
+                        <p>木工全般の技能を身につける実技訓練と、材料学や工作法、製品設計、経営学なども学び、木工業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75827.htm#itemid75827">
+                    <div class="card-image">
+                        <img src="images/r04ken01.jpg" alt="建築科">
+                    </div>
+                    <div class="card-content">
+                        <h3>建築科</h3>
+                        <p>器工具や木工機械の取り扱いをはじめ、模擬住宅の実習を通じて軸組加工などの施工技術を学び、建築業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75810.htm#itemid75810">
+                    <div class="card-image">
+                        <img src="images/r06zyu001.jpg" alt="住宅設備科">
+                    </div>
+                    <div class="card-content">
+                        <h3>住宅設備科</h3>
+                        <p>電気・ガス・水道・空調設備・溶接等の知識と技能を習得し、設備関連業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75808.htm#itemid75808">
+                    <div class="card-image">
+                        <img src="images/r04fuku01.jpg" alt="服飾ビジネス科">
+                    </div>
+                    <div class="card-content">
+                        <h3>服飾ビジネス科</h3>
+                        <p>製図、縫製及び工業用ミシンの操作など被服の製作に必要な基本技能を習得し、服飾業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75806.htm#itemid75806">
+                    <div class="card-image">
+                        <img src="images/r04office02.jpg" alt="オフィスビジネス科">
+                    </div>
+                    <div class="card-content">
+                        <h3>オフィスビジネス科</h3>
+                        <p>簿記・税務会計、一般事務、ビジネスマナーなどの知識と、パソコン会計およびパソコン操作技術を習得し、事務系職種で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75758.htm#itemid75758">
+                    <div class="card-image">
+                        <img src="images/r04build02.jpg" alt="ビルメンテナンス科">
+                    </div>
+                    <div class="card-content">
+                        <h3>ビルメンテナンス科</h3>
+                        <p>電気工事、電気設備、冷凍機、消防設備等の技能と知識を基礎的理論と実習から習得し、関連国家資格を取得することで、関連業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75756.htm#itemid75756">
+                    <div class="card-image">
+                        <img src="images/R06zou001.jpg" alt="造園技術科">
+                    </div>
+                    <div class="card-content">
+                        <h3>造園技術科</h3>
+                        <p>庭園設計と作庭技術、樹木の植栽や剪定技術など基礎知識と造園技能を習得することで、造園業界で活躍できる人材を育成します。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="/item/75750.htm#itemid75750">
+                    <div class="card-image">
+                        <img src="images/r04hanbai01.jpg" alt="販売実務科（はんばいじつむか）">
+                    </div>
+                    <div class="card-content">
+                        <h3>販売実務科（はんばいじつむか）</h3>
+                        <p>知的障害のある就労希望者を対象に、個々の能力・適性に応じた職業訓練を実施し、職業に就くためのサポートを行います。</p>
+                    </div>
+                    <div class="detail">
+                        <p>詳しく見る</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
