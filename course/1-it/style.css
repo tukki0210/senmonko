@@ -19,6 +19,13 @@ img {
     flex-direction: row-reverse;
 }
 
+
+/* カリキュラム */
+.in-head {
+    font-weight: bold;
+    color: var(--secondary);
+}
+
 /* 目指せる資格 */
 
 .guide::after {

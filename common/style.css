@@ -77,7 +77,7 @@ li {
     position: relative;
     margin: 0 0 5px 20px;
 }
-/* 
+
 li::before {
     content: "⚫︎";
     position: absolute;
@@ -85,7 +85,7 @@ li::before {
     left: -20px;
     color: var(--secondary);
     font-size: 14px;
-} */
+}
 
 
 section {
