@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .border-pop {
+            border: 5px solid;
+            border-image: linear-gradient(45deg, #FF7F50, #FFD700, #ADFF2F, #00BFFF, #FF69B4);
+            border-image-slice: 1;
+        }
+
+        .box-shadow-pop {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .text-shadow-pop {
+            text-shadow: 2px 2px 0 #FF4500, -2px -2px 0 #00CED1;
+        }
+
+        .background-gradient {
+            background: linear-gradient(135deg, #FF7F50, #FFD700, #ADFF2F, #00BFFF, #FF69B4);
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .bounce-animation {
+            display: inline-block;
+            animation: bounce 1s infinite;
+        }
+
+        .shade-box-shadow {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), -10px -10px 20px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+.summer-theme {
+    background-color: #87CEEB; /* Sky blue */
+    color: #FFA500; /* Orange */
+}
+
+.summer-theme-button {
+    background-color: #00CED1; /* Turquoise */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.summer-theme-button:hover {
+    background-color: #FFA500; /* Orange */
+}
+
+@keyframes splash {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.testimonial-splash {
+    background-color: #E0FFFF; /* Light Cyan */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: splash 2s ease-in-out infinite;
+}
+
+.testimonial-card {
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #87CEEB; /* Light Blue */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+.testimonial-gradient {
+    background: linear-gradient(135deg, #FFB6C1, #87CEEB); /* Pink to Light Blue */
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Quicksand', sans-serif; /* Pop font */
+}
+.testimonial-bubble {
+    background-color: #FFFFE0; /* Light Yellow */
+    border: 2px solid #FFA500; /* Orange */
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px;
+    position: relative;
+    color: #333;
+}
+
+.testimonial-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #FFFFE0; /* Light Yellow */
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}.testimonial-text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FFA500; /* Orange */
+}
+
+
+    </style>
+    <title>Document</title>
+</head>
+
+<body class="testimonial-gradient">
+    <div class="border-pop">
+        border
+    </div>
+    <div class="shade-box-shadow">
+        box
+    </div>
+    <button class="summer-theme-button">ボタン</button>
+
+    <div class="testimonial-splash">splash</div>
+
+    <div class="testimonial-text">texttext</div>
+</body>
+
+</html>

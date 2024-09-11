@@ -6,6 +6,7 @@
     --secondary:#197a4b;
     --tertiary:#0c472a;
     --bg:#e6f5ec;
+    
 }
 
 body {
@@ -76,7 +77,7 @@ li {
     position: relative;
     margin: 0 0 5px 20px;
 }
-
+/* 
 li::before {
     content: "⚫︎";
     position: absolute;
@@ -84,7 +85,7 @@ li::before {
     left: -20px;
     color: var(--secondary);
     font-size: 14px;
-}
+} */
 
 
 section {
