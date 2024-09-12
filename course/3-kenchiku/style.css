@@ -1,3 +1,9 @@
+:root{
+    --primary:#ccc565;
+    --secondary:#7a5319;
+    --bg:#f5f3e6;
+}
+
 img {
     width: 100%;
     aspect-ratio: 4/3;
