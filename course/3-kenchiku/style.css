@@ -58,27 +58,3 @@ img {
     background-color: var(--bg);
 }
 
-
-/* 円グラフ */
-.pie {
-	position: relative;
-	margin:0 auto;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-}
-
-.pie-60{
-	background-image: conic-gradient(var(--primary) 0% 80%, var(--bg) 80% 100%);
-}
-
-.pie span {
-	position: absolute;
-	top: 50%;
-	right: 50px;
-	transform: translateY(-50%);
-	color: #fff;
-	font-size: 26px;
-	font-weight: 700;
-}
-
