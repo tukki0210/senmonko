@@ -5,9 +5,18 @@ img {
     border-radius: 2%;
 }
 
+span.marker {
+    margin:0  0.5em;
+    text-decoration: underline;
+    text-decoration-thickness: 0.3em;
+    text-decoration-color: yellow;
+    text-underline-offset: -0.2em;
+    text-decoration-skip-ink: none;
+}
 
 .container {
     display: flex;
+    /* justify-content: space-between; */
 }
 
 .container .box {
@@ -20,10 +29,27 @@ img {
 }
 
 
-/* カリキュラム */
+/* 主なカリキュラム */
+.curriculam h4 {
+    border-bottom: 2px solid var(--secondary);
+}
+
 .in-head {
     font-weight: bold;
     color: var(--secondary);
+}
+
+.curriculam .container {
+    justify-content: space-between;
+}
+
+
+.curriculam .container div:first-of-type{
+    width: 60%;
+}
+
+.curriculam .container div:last-of-type{
+    width: 35%;
 }
 
 /* 目指せる資格 */

@@ -11,7 +11,7 @@ img {
 }
 .container div {
     width: 46%;
-    margin: 0 10px;
+    /* margin: 0 10px; */
 }
 
 .reverse {
