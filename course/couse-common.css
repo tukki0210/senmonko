@@ -1,61 +1,167 @@
-.catchcopy {
-    background-color: var(--secondary);
-    color: var(--white);
-}
-
 img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 2%;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: 2%;
 }
 
 span.marker {
-    margin:0  0.5em;
-    text-decoration: underline;
-    text-decoration-thickness: 0.3em;
-    text-decoration-color: yellow;
-    text-underline-offset: -0.2em;
-    text-decoration-skip-ink: none;
+  margin: 0 0.5em;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3em;
+  text-decoration-color: yellow;
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
 }
 
 .container {
-    display: flex;
-    /* justify-content: space-between; */
+  display: flex;
+  /* justify-content: space-between; */
 }
 
 .container .box {
-    width: 46%;
-    margin: 0 auto 20px;
+  width: 46%;
+  margin: 0 auto 20px;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
+.catchcopy {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+/* intro */
+section.intro {
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+section .intro_header {
+  color: var(--white);
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  width: 400px;
+  margin: 0 auto 30px auto;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--white);
+}
+
+section .intro_body {
+  background-color: var(--white);
+  margin: 10px;
+  border-radius: 5px;
+}
+section.intro ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+section.intro ul li {
+  width: 240px;
+  text-align: center;
+  position: relative;
+  margin: 6em 0 3em 0;
+  padding: 10px;
+}
+
+section.intro ul li::before {
+  content: "";
+  border: 2px dashed var(--secondary);
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -5em;
+  left: 7em;
+}
+
+section.intro ul li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3em;
+  left: 6em;
+  width: 30px;
+  height: 15px;
+  border-left: 4px solid var(--secondary);
+  border-bottom: 3px solid var(--secondary);
+  transform: rotate(-45deg);
+}
+
+/* 時間割 */
+
+table.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table.schedule th,
+table.schedule td {
+  border: 1px solid var(--black);
+  padding: 8px;
+  text-align: center;
+}
+
+table.schedule th {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+table.schedule td:first-child {
+  color: var(--white);
+  background-color: var(--secondary);
+  font-weight: bold;
+  width: 150px;
+  line-height: 2;
+}
+
+table.schedule td {
+  height: 50px;
+}
+
+thead {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--white);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--bg);
+}
 
 /* 主なカリキュラム */
 .curriculam h4 {
-    font-size: 20px;
-    border-bottom: 2px solid var(--secondary);
+  font-size: 20px;
+  border-bottom: 2px solid var(--secondary);
 }
 
 .in-head {
-    font-weight: bold;
-    color: var(--secondary);
+  font-weight: bold;
+  color: var(--secondary);
 }
 
 .curriculam .container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
-
-.curriculam .container div:first-of-type{
-    width: 60%;
+.curriculam .container div:first-of-type {
+  width: 60%;
 }
 
-.curriculam .container div:last-of-type{
-    width: 35%;
+.curriculam .container div:last-of-type {
+  width: 35%;
 }
 
 /* 目指せる資格 */
@@ -74,20 +180,21 @@ span.marker {
     margin-left: 10px;
 } */
 
-
-
 /* スケジュール */
-.schedule {
-    margin: 0 10px;
-}
-.schedule table {
-    width: 48%;
+
+
+table.anual_schedule {
+  width: 48%;
 }
 
-.schedule table tr td {
-    height: 100px;
-}
-.schedule table tr:nth-of-type(odd){
-    background-color: var(--bg);
+table.anual_schedule tr td {
+  height: 100px;
 }
 
+table.anual_schedule tr:nth-of-type(odd) {
+  background-color: var(--bg);
+}
+
+table.anual_schedule tr:nth-of-type(even) {
+  background-color: var(--white);
+}
