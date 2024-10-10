@@ -2,7 +2,7 @@ img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-  border-radius: 2%;
+  /* border-radius: 2%; */
 }
 
 span.marker {
@@ -16,12 +16,13 @@ span.marker {
 
 .container {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
 }
 
 .container .box {
   width: 46%;
   margin: 0 auto 20px;
+  /* padding:  */
 }
 
 .reverse {
@@ -41,10 +42,10 @@ section.intro {
 
 section .intro_header {
   color: var(--white);
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 32px;
+  font-weight: 500;
   text-align: center;
-  width: 400px;
+  width: 500px;
   margin: 0 auto 30px auto;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--white);
@@ -55,21 +56,23 @@ section .intro_body {
   margin: 10px;
   border-radius: 5px;
 }
-section.intro ul {
+section.intro .intro_body ul {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
 }
 
-section.intro ul li {
+section.intro .intro_body ul li {
   width: 240px;
+  font-size:20px;
+  font-weight: 500;
   text-align: center;
   position: relative;
   margin: 6em 0 3em 0;
   padding: 10px;
 }
 
-section.intro ul li::before {
+section.intro .intro_body ul li::before {
   content: "";
   border: 2px dashed var(--secondary);
   width: 50px;
@@ -84,13 +87,61 @@ section.intro ul li::after {
   display: block;
   position: absolute;
   top: -3em;
-  left: 6em;
+  left: 5.5em;
   width: 30px;
   height: 15px;
   border-left: 4px solid var(--secondary);
   border-bottom: 3px solid var(--secondary);
   transform: rotate(-45deg);
 }
+
+
+/* ポイント */
+section.course_point .point-container {
+  margin: 3em 0;
+  padding-bottom:2em;
+  border-bottom: 3px solid var(--primary);
+}
+
+section.course_point .point-container:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom:0;
+}
+
+section.course_point h4 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+section.course_point .point {
+  position:relative;
+  margin-top: 20px;
+}
+
+section.course_point .point::before {
+  content: "";
+  display: block;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--secondary);
+  top: -1.2em;
+  left: 0;
+}
+
+section.course_point .p01::before {
+  content: '01';
+}
+
+section.course_point .p02::before {
+  content: '02';
+}
+
+section.course_point .p03::before {
+  content: '03';
+}
+
 
 /* 時間割 */
 
@@ -115,17 +166,20 @@ table.schedule th {
   color: var(--white);
 }
 
+table.schedule td {
+  height: 50px;
+  width: 100px;
+}
+
 table.schedule td:first-child {
   color: var(--white);
   background-color: var(--secondary);
   font-weight: bold;
-  width: 150px;
+  width: 140px;
   line-height: 2;
 }
 
-table.schedule td {
-  height: 50px;
-}
+
 
 thead {
   background-color: var(--secondary);
@@ -133,12 +187,20 @@ thead {
   font-weight: bold;
 }
 
-tbody tr:nth-child(odd) {
+table.schedule tr:nth-child(odd) {
   background-color: var(--white);
 }
 
-tbody tr:nth-child(even) {
+table.schedule tr:nth-child(even) {
   background-color: var(--bg);
+}
+
+table.schedule tr:nth-child(5){
+  background-color: var(--primary);
+}
+
+table.schedule tr:nth-child(5) td{
+  height:30px;
 }
 
 /* 主なカリキュラム */
@@ -181,10 +243,15 @@ tbody tr:nth-child(even) {
 } */
 
 /* スケジュール */
-
+.container_annual_schedule {
+  display: flex;
+}
 
 table.anual_schedule {
   width: 48%;
+}
+table.anual_schedule:first-of-type td {
+  border-right: none;
 }
 
 table.anual_schedule tr td {
