@@ -24,6 +24,9 @@ h2 {
   content: "【中学校卒業程度の学力を有する方対象】";
  }
 
+ h2.wc::after {
+  content: "(販売実務科から科名変更)【知的障がいがある方】";
+ }
 
 .english {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -224,9 +227,9 @@ table.schedule tr:nth-child(odd) {
   background-color: var(--white);
 }
 
-table.schedule tr:nth-child(even) {
+/* table.schedule tr:nth-child(even) {
   background-color: var(--bg);
-}
+} */
 
 
 /* 主なカリキュラム */

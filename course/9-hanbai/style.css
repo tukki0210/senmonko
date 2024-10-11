@@ -1,0 +1,18 @@
+:root{
+    --primary:#65cc93;
+    --secondary:#194e7a;
+    --bg:#f5e6ea;
+}
+
+.curriculam table th {
+    width: 240px;
+    font-size: 20px;
+}
+
+/* .curriculam table td {
+    font-size: 20px;
+}
+
+ruby rt{
+    font-size: 12px;
+} */
