@@ -1,8 +1,8 @@
-h2 {
+/* h2 {
   color: var(--secondary);
   font-size: 40px;
   background-image: none;
-}
+} */
 
 .english {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -56,7 +56,7 @@ section .intro_header {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  width: 600px;
+  width: 650px;
   margin: 0 auto 30px auto;
   padding-bottom: 10px;
   border-bottom: 3px solid var(--white);
@@ -258,21 +258,24 @@ table.schedule tr:nth-child(5) td{
   display: flex;
 }
 
-table.anual_schedule {
+table.annual_schedule {
   width: 48%;
 }
-table.anual_schedule:first-of-type td {
+table.annual_schedule th {
+  width: 80px;;
+}
+table.annual_schedule:first-of-type td {
   border-right: none;
 }
 
-table.anual_schedule tr td {
-  height: 100px;
+table.annual_schedule tr td {
+  height: 60px;
 }
 
-table.anual_schedule tr:nth-of-type(odd) {
+table.annual_schedule tr:nth-of-type(odd) {
   background-color: var(--bg);
 }
 
-table.anual_schedule tr:nth-of-type(even) {
+table.annual_schedule tr:nth-of-type(even) {
   background-color: var(--white);
 }
