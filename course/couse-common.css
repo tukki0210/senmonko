@@ -3,6 +3,27 @@
   font-size: 40px;
   background-image: none;
 } */
+h2 {
+  position: relative;
+}
+
+ h2::after {
+  color: var(--white);
+  position: absolute;
+  font-size: 20px;
+  font-weight: 500;
+  bottom: 0.5em;
+  right: 0.5em;
+ }
+
+ h2.hsc::after {
+  content: "【高等学校卒業（見込み）の方等対象】";
+ }
+
+ h2.jhsc::after {
+  content: "【中学校卒業程度の学力を有する方対象】";
+ }
+
 
 .english {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -161,14 +182,15 @@ table.schedule {
   border-collapse: collapse;
   margin: 20px auto;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
 table.schedule th,
 table.schedule td {
-  border: 1px solid var(--black);
-  padding: 8px;
+  border: 1px solid var(--secondary);
+  padding: 1px 3px;
+  line-height: 1.5;
   text-align: center;
 }
 
@@ -178,25 +200,25 @@ table.schedule th {
 }
 
 table.schedule td {
-  height: 50px;
+  /* height: 5px; */
   width: 100px;
 }
 
 table.schedule td:first-child {
-  color: var(--white);
-  background-color: var(--secondary);
+  color: var(--black);
+  background-color: var(--white);
   font-weight: bold;
   width: 140px;
-  line-height: 2;
+  /* line-height: 2; */
 }
 
 
 
-thead {
-  background-color: var(--secondary);
-  color: var(--white);
+/* thead {
+  background-color: var(--primary);
+  color: var(--black);
   font-weight: bold;
-}
+} */
 
 table.schedule tr:nth-child(odd) {
   background-color: var(--white);
@@ -206,13 +228,6 @@ table.schedule tr:nth-child(even) {
   background-color: var(--bg);
 }
 
-table.schedule tr:nth-child(5){
-  background-color: var(--primary);
-}
-
-table.schedule tr:nth-child(5) td{
-  height:30px;
-}
 
 /* 主なカリキュラム */
 .curriculam h4 {
