@@ -1,73 +1,153 @@
-
-p.note {
-    font-size: 14px;
-    color: #555555;
-    margin-bottom: 10px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: black;
-    /* font-weight: bold; */
-}
-
-/* ul li a:hover {
-    text-decoration: underline;
-} */
-
-
-ul li ul {
-    margin-left: 20px;
-    margin-top: 10px;
+/* 目次 */
+section.contents {
+    border-left: var(--secondary);
 }
 
 
 /* テーブル全体のスタイル */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    text-align: left;
-}
-
-/* テーブルヘッダーのスタイル */
-th, td {
-    padding: 12px 15px;
-}
-
-/* テーブルヘッダーの背景色とフォント色 */
-th {
-    background-color: #009879;
-    color: #ffffff;
     text-align: center;
 }
 
-/* 偶数行の背景色 */
-tr:nth-child(even) {
-    background-color: #f3f3f3;
+
+/* 各科案内 */
+
+
+#course-guide table td {
+    line-height: 1.4;
 }
 
-/* 奇数行の背景色 */
-tr:nth-child(odd) {
-    background-color: #ffffff;
+#course-guide table tbody tr td:first-child {
+    color: var(--black);
+    width: 300px;
 }
 
-/* テーブルの枠線 */
-th, td {
-    border: 1px solid #dddddd;
+#course-guide table tbody tr td:first-of-type {
+    border-bottom: 1px solid #dddddd;
 }
 
-/* テーブルのホバー効果 */
-/* tr:hover {
-    background-color: #f1f1f1;
-} */
+#course-guide table tbody tr:nth-child(2) td:first-of-type {
+    border-bottom-color: black;
+}
+
+#course-guide table tbody tr:nth-child(7) td:first-of-type {
+    border-bottom-color: black;
+}
+
+#course-guide table tbody tr:last-child td:first-of-type {
+    border-bottom-color: black;
+}
+
+
+#course-guide table tbody tr td:first-child a {
+    color: var(--black);
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    font-size: 500;
+}
+
+#course-guide table tr td:nth-of-type(2) {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+
+/* 援護措置 */
+section.support div {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+section.support div:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.point {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.point::before {
+    content: "";
+    display: block;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--secondary);
+    top: -1.8em;
+    left: 0;
+}
+
+.p01::before {
+    content: '01';
+}
+
+.p02::before {
+    content: '02';
+}
+
+.p03::before {
+    content: '03';
+}
+
+.p04::before {
+    content: '04';
+}
+
+.p05::before {
+    content: '05';
+}
+
+
+section.message div {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+section.message div:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+/* 入校応募書類の提出 */
+
+.submit table tr td:last-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.arrow-container {
+    display: inline-block;
+    text-align: center;
+    margin: 40px;
+}
+
+.square {
+    width: 40px;
+    height: 30px;
+    background-color: var(--primary); /* 四角形の色 */
+    margin: 0 auto;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 30px solid var(--primary); /* 三角形の色 */
+    margin: 0 auto;
+}
+
+/* 施設見学会 */
+
+.visit table tr td:last-child {
+    text-align: left;
+    padding-left: 20px;
+}

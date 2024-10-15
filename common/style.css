@@ -113,7 +113,7 @@ th {
   background-color: var(--secondary);
   font-weight: bold;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.9;
 }
 
@@ -148,4 +148,19 @@ button:hover {
 
 button:hover a {
   color: var(--white);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .box {
+  width: 46%;
+  margin: 0 auto 20px;
+  /* padding:  */
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }

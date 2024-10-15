@@ -49,20 +49,6 @@ span.marker {
   text-decoration-skip-ink: none;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.container .box {
-  width: 46%;
-  margin: 0 auto 20px;
-  /* padding:  */
-}
-
-.reverse {
-  flex-direction: row-reverse;
-}
 
 .catchcopy {
   background-color: var(--secondary);
