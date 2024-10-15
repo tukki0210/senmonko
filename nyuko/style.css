@@ -132,7 +132,7 @@ section.message div:last-of-type {
 .square {
     width: 40px;
     height: 30px;
-    background-color: var(--primary); /* 四角形の色 */
+    background-color: var(--secondary); /* 四角形の色 */
     margin: 0 auto;
 }
 
@@ -141,7 +141,7 @@ section.message div:last-of-type {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 30px solid var(--primary); /* 三角形の色 */
+    border-top: 30px solid var(--secondary); /* 三角形の色 */
     margin: 0 auto;
 }
 
@@ -151,3 +151,7 @@ section.message div:last-of-type {
     text-align: left;
     padding-left: 20px;
 }
+
+
+
+/* 入校選考の日時 */
