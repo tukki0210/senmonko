@@ -7,7 +7,6 @@ section.contents {
 /* テーブル全体のスタイル */
 table {
     text-align: center;
-    width: 90%;
     margin: 0 auto;
 }
 
@@ -17,6 +16,17 @@ table {
 } */
 /* 各科案内 */
 
+section h4.in_head {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--secondary);
+    padding: 10px 20px;
+    border-left: 8px solid var(--secondary);  
+}
+
+section .box {
+    padding: 0 20px;
+}
 
 #course-guide table td {
     line-height: 1.4;
@@ -75,6 +85,7 @@ section.support div:last-of-type {
     position: relative;
     font-size: 24px;
     margin-bottom: 0;
+    border: none;
 }
 
 .point::before {
@@ -122,8 +133,11 @@ section.message div:last-of-type {
 
 
 /* 入校応募書類の提出 */
+table tr th {
+    width: 200px;
+}
 
-.submit table tr td:last-child {
+table.td_left tr td:last-child {
     text-align: left;
     padding-left: 20px;
 }
@@ -158,17 +172,7 @@ section.message div:last-of-type {
     border-top: 20px solid #4CAF50;
     margin: 10px 0;
   }
-  
-  @media (min-width: 768px) {
-    .flowchart {
-      flex-direction: row;
-    }
-    .arrow {
-      transform: rotate(90deg); /* 横向きの矢印 */
-      margin: 0 10px;
-    }
-  }
-  
+
 
 /* 矢印 */
 .arrow-container {
