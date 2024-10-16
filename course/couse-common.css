@@ -1,8 +1,3 @@
-/* h2 {
-  color: var(--secondary);
-  font-size: 40px;
-  background-image: none;
-} */
 h2 {
   position: relative;
 }
@@ -36,11 +31,13 @@ h2 {
   padding: 10px 20px;
   border-left: 8px solid var(--secondary);
 }
+
+
 img {
   width: 100%;
   aspect-ratio: 4/3;
   object-fit: cover;
-  /* border-radius: 2%; */
+  border-radius: 1%;
 }
 
 span.marker {
@@ -52,11 +49,6 @@ span.marker {
   text-decoration-skip-ink: none;
 }
 
-
-.catchcopy {
-  background-color: var(--secondary);
-  color: var(--white);
-}
 
 /* intro */
 section.intro {
@@ -205,13 +197,6 @@ table.schedule td:first-child {
 }
 
 
-
-/* thead {
-  background-color: var(--primary);
-  color: var(--black);
-  font-weight: bold;
-} */
-
 table.schedule tr:nth-child(odd) {
   background-color: var(--white);
 }
@@ -221,22 +206,14 @@ table.schedule tr:nth-child(odd) {
 } */
 
 
-/* 主なカリキュラム */
-.curriculam h4 {
+/* カリキュラム */
+
+.curriculam .cur_head {
+
+  font-weight: bold;
   font-size: 20px;
-  border-bottom: 2px solid var(--secondary);
-}
-
-.curriculam .container {
-  justify-content: space-between;
-}
-
-.curriculam .container div:first-of-type {
-  width: 65%;
-}
-
-.curriculam .container div:last-of-type {
-  width: 30%;
+  color: var(--secondary);
+  padding: 10px;
 }
 
 
