@@ -28,11 +28,14 @@ h2 {
   content: "(販売実務科から科名変更)【知的障がいがある方】";
  }
 
-.english {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 40px;
-}
 
+ .in-head {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--secondary);
+  padding: 10px 20px;
+  border-left: 8px solid var(--secondary);
+}
 img {
   width: 100%;
   aspect-ratio: 4/3;
@@ -167,7 +170,7 @@ section.course_point .p03::before {
 /* 時間割 */
 
 table.schedule {
-  width: 100%;
+  width: 95%;
   border-collapse: collapse;
   margin: 20px auto;
   background-color: var(--white);
@@ -224,56 +227,38 @@ table.schedule tr:nth-child(odd) {
   border-bottom: 2px solid var(--secondary);
 }
 
-.in-head {
-  font-weight: bold;
-  color: var(--secondary);
-}
-
 .curriculam .container {
   justify-content: space-between;
 }
 
 .curriculam .container div:first-of-type {
-  width: 60%;
+  width: 65%;
 }
 
 .curriculam .container div:last-of-type {
-  width: 35%;
+  width: 30%;
 }
 
-/* 目指せる資格 */
-
-/* .guide::after {
-    content: '[試]';
-    color: var(--secondary); 
-    font-weight: bold;
-    margin-left: 10px;
-}
-
-.cert::after {
-    content: '[専]';
-    color: var(--secondary); 
-    font-weight: bold;
-    margin-left: 10px;
-} */
 
 /* スケジュール */
 .container_annual_schedule {
   display: flex;
+  width: 95%;
+  margin: 0 auto;
 }
 
 table.annual_schedule {
-  width: 48%;
+  width: 50%;
 }
 table.annual_schedule th {
-  width: 80px;;
+  width: 50px;;
 }
 table.annual_schedule:first-of-type td {
   border-right: none;
 }
 
 table.annual_schedule tr td {
-  height: 60px;
+  height: 110px;
 }
 
 table.annual_schedule tr:nth-of-type(odd) {
